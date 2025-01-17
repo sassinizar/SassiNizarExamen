@@ -21,7 +21,7 @@ spring:
                 - id: GestionFormateurs
                   uri: lb://GestionFormateurs
                   predicates:
-                      - Path=/projet/**
+                      - Path=/formateur/**
                   filters:
                       - RewritePath=/formateur/(?<path>.*), /$\{path}
 management:
